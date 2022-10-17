@@ -27,7 +27,7 @@ const Contact = () => {
             <h3>lubnafairuzzafira@gmail.com</h3>
           </div>
           <div className="contact__website">
-            <h3 href="https://lubnasyifa.netlify.app/">lubnafairuzzafira.netlify.com</h3>
+            <h3>lubnasyifa.netlify.com</h3>
           </div>
         </div>
         </AnimationOnScroll>
