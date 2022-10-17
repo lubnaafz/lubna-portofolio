@@ -1,0 +1,113 @@
+nav {
+    background: var(--color-white);
+    border-radius: 3rem;
+    box-shadow: 0 0 0 2px var(--color-dark-grey);
+    width: max-content;
+    position: fixed;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 6;
+    right: 3%;
+    top: 3%;    
+}
+
+.nav__list a {
+    padding: 0.2rem 2.5rem;
+    color: var(--color-secondary);
+    font-size: var(--font-medium);
+    text-decoration: none;  
+}
+
+nav a:hover {
+    color: black;
+    background: linear-gradient(var(--color-primary), var(--color-primary)) center bottom / 1rem 0.1rem no-repeat;
+}
+
+nav a.active {
+    color: black;
+    background: radial-gradient(farthest-side,var(--color-primary) 98%,transparent 100%) center bottom / 0.2rem 0.2rem no-repeat;
+}   
+
+.nav__icon,
+.nav__toggle,
+.nav__close {
+    font-size: 20px;
+    display: none;
+}
+
+/* =============== MEDIA QUERIES =============== */
+@media screen and (max-width: 768px) {
+    nav {
+        height: 21%;
+        top: 0%;
+        right: 0%;
+        padding: 0.5rem 0rem;
+        box-shadow: 0 0 0 0px transparent;
+        border-radius: 0rem 0 0rem 1rem;
+        width: 20%;
+        background: transparent;
+    }
+
+    .nav__list {
+        position: fixed;
+        top: 0%;
+        right: -300px;
+        background-color: var(--color-white);
+        box-shadow: 0 0 0 1px var(--color-secondary);
+        border-radius: 0rem 0 0rem 0.5rem;
+        transition: 0.3s ease-in-out;
+        justify-content: left;
+    }
+
+    .show_nav {
+        right: 0px;
+    }
+
+    .nav__list a {
+        display: flex;
+        margin: 1rem;
+        align-items: center;
+        margin-top: 1.5rem;
+        margin-left: 0;
+        margin-right: 3rem;
+    }
+
+    .nav__icon {
+        margin-right: 0.5rem;
+    }
+    
+    .nav__icon,
+    .nav__toggle,
+    .nav__close {
+        display: block;
+        font-size: 1.7rem;
+    } 
+
+    .nav__toggle {
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 2%;
+        top: 1%;
+        color: var(--color-secondary);
+        margin: 0.5rem;
+        background-color: var(--color-white);
+        box-shadow: 0 0 0 1px var(--color-secondary);
+        width: 30px;
+        height: 27px;
+    }
+
+    .nav__close {
+        position: absolute;
+        right: 2%;
+        top: 1%;
+        margin: 0.5rem;
+    }
+
+    .nav__toggle:hover {
+        background-color: transparent;
+    }
+
+}

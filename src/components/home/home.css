@@ -1,0 +1,263 @@
+.home__header {
+    display: block;
+    position: sticky;
+    padding: 0.7rem 1.7rem;
+    top: 3%;    
+}
+.home__header a {
+    padding: 0.2rem 0.7rem;
+    font-size: var(--font-medium);
+    text-decoration: none;
+}
+
+.home__section {
+    background: url('/src/assets/bg-home.png');
+    top: 0;
+    position: relative;
+}
+
+.home__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    height: 90vh;
+    width: 95%;
+}
+
+.home__desc {
+    margin-left: 3rem;
+}
+
+.hi {
+    color: var(--color-primary);
+}
+
+.home__desc h1 {
+    font-weight: 700;
+}
+
+.name {
+    color: var(--color-white);
+}
+
+.desc {
+    color: var(--color-white);
+    opacity: 70%;
+}
+
+.CV {
+    background: var(--color-primary);
+    opacity: 75%;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 2px var(--color-white);
+    width: max-content;
+    padding: 0.4rem 1.7rem;
+    z-index: 2;
+    margin-top: 1.5%;
+    position: absolute;
+}
+
+.CV a {
+    color: var(--color-white);
+    font-size: var(--font-medium);
+    text-decoration: none;
+}
+
+.CV:hover {
+    opacity: 100%;
+}
+
+.home__img{
+    /* background: url('/src/assets/me.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover; */
+    width: 600px;
+    height: 600px;
+    right: 2%;
+    bottom: 0%;
+    position: absolute; 
+}
+
+.home__scroll_down {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 2px var(--color-white);
+    animation: MoveUpDown 3s linear infinite;
+}
+
+
+@keyframes MoveUpDown {
+	0%, 200% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 10px;
+      }
+}
+
+/* =============== MEDIA QUERIES =============== */
+@media screen and (max-width: 1200px) {
+    .home__img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .home__desc h1 {
+        font-size: 50px;    
+    }
+
+    .home__container {
+        height: 70vh;
+        align-items:flex-end;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home__section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .home__img {
+        width: 400px;
+        height: 400px;
+        right: 0%;
+    }
+
+    .home__desc {
+        margin-left: 2rem;
+    }
+
+    .home__desc h1 {
+        font-size: 40px;    
+    }
+
+    .home__container {
+        height: 50vh;
+        align-items:center;
+    }
+
+    .desc {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .home__img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .home__desc {
+        margin-left: 1rem;
+    }
+
+    .hi {
+        font-size: 10px;
+    }
+
+    .home__desc h1 {
+        font-size: 30px; 
+    }
+
+    .home__container {
+        height: 40vh;
+    }
+
+    .desc {
+        font-size: 11px;
+    }
+
+    .home__scroll_down {
+        border-radius: 1rem;
+        box-shadow: 0 0 0 1px var(--color-white);
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home__header {
+        display: block;
+        position: sticky;
+        padding: 0.1rem 1rem;
+        top: 1%;    
+    }
+    .home__header a {
+        padding: 0.2rem 0.5rem;
+        font-size: 10px
+    }
+
+    .home__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home__desc {
+        margin-left: 0rem;
+    }
+
+    .home__desc h1 {
+        font-size: 20px;    
+    }
+
+    .home__container {
+        height: 30vh;
+        align-items:center;
+    }
+
+    .desc {
+        font-size: 9px;
+    }
+
+    .CV {
+        padding: 0.1rem 1rem;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 0 1px var(--color-white);
+    }
+
+    .CV a {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home__img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .hi {
+        font-size: 8px;
+    }
+
+    .home__desc h1 {
+        font-size: 18px;    
+    }
+
+    .home__container {
+        height: 22vh;
+        width: 90%;
+    }
+
+    .desc {
+        font-size: 10px;
+    }
+
+    .CV a {
+        font-size: 10px;
+    }
+
+}
