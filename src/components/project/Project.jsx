@@ -4,6 +4,7 @@ import siperpus from '../../assets/siperpus.png'
 import sibusiness from '../../assets/sibusiness.png'
 import cspost from '../../assets/cspost.png'
 import todolist from '../../assets/todolist.png'
+import lubnastore from '../../assets/lubnastore.png'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
 
@@ -12,7 +13,8 @@ const Project = () => {
     { name: 'siperpus', dir: siperpus, link: 'https://siperpus-smp131jakarta.vercel.app/'},
     { name: 'sibusiness', dir: sibusiness, link: 'https://sibusinessa05.herokuapp.com/' },
     { name: 'cspost', dir: cspost, link: 'http://cspost.herokuapp.com/'},
-    { name: 'todolist', dir: todolist, link: 'https://todolist-by-lubna.netlify.app/'}
+    { name: 'todolist', dir: todolist, link: 'https://todolist-by-lubna.netlify.app/'},
+    { name: 'lubna-store', dir: lubnastore, link: 'https://lubna-store.netlify.app/'}
   ];
 
   return (

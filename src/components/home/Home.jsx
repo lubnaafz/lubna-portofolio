@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css'
+import logo from '../../assets/logo.png'
 import Resume from '../../assets/Resume.pdf'
 import Typewriter from 'react-ts-typewriter';
 import me from '../../assets/me.png'
@@ -9,9 +10,7 @@ const Home = () => {
   return (
     <section className='home__section' id='home'>
       <div className="home__header">
-        <a href='#home'>
-        LFZ
-        </a>
+        <img src={logo} alt="logo" />
       </div>
       <div className="home__container container">
         <div className="home__desc">

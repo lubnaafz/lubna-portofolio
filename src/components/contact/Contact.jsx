@@ -2,7 +2,7 @@ import React from 'react'
 import './contact.css'
 import { BsLinkedin } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
-import { BsMedium } from 'react-icons/bs'
+import { FiGithub } from 'react-icons/fi'
 import { BsYoutube } from 'react-icons/bs'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
@@ -37,10 +37,10 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/lubnafairuzzafira/"><BsLinkedin/></a>
           </div>
           <div className="icon">
-            <a href="https://www.instagram.com/lubnaafz/"><BsInstagram/></a>
+            <a href="https://github.com/lubnaafz"><FiGithub/></a>
           </div>
           <div className="icon">
-            <a href="https://www.instagram.com/lubnaafz/"><BsMedium/></a>
+            <a href="https://www.instagram.com/lubnaafz/"><BsInstagram/></a>
           </div>
           <div className="icon">
             <a href="https://www.youtube.com/channel/UCmydIw9tTlKw0Emw4ERXijA"><BsYoutube/></a>

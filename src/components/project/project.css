@@ -25,7 +25,8 @@
 
 .project__list {
     margin-top: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content:space-between;
 }
@@ -34,7 +35,7 @@
     padding: 1rem;
     margin: 0.5rem;
     height: 90%;
-    border-radius: 1rem;
+    border-radius: 10px;
     background-color: var(--color-secondary);
 }
 
@@ -42,7 +43,7 @@
     height: 90%;
     width: 100%;
     object-fit: contain;
-    border-radius: 1rem;
+    border-radius: 8px;
 }
 
 .project__text {
@@ -61,6 +62,7 @@
     background-color: var(--color-primary);
     font-size: 15px;
     font-family: 'Poppins';
+    cursor: pointer;
 }
 
 .project__link:hover {
