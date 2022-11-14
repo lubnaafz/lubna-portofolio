@@ -6,8 +6,10 @@ import { FiGithub } from 'react-icons/fi'
 import { BsYoutube } from 'react-icons/bs'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
+import useAnalyticsEventTracker from '../useAnalyticsEventTracker';
 
 const Contact = () => {
+  const gaEventTracker = useAnalyticsEventTracker('Contact us');
   return (
     <section className='contact__section' id='contact'>
       <div className="contact__container">
@@ -37,7 +39,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/lubnafairuzzafira/"><BsLinkedin/></a>
           </div>
           <div className="icon">
-            <a href="https://github.com/lubnaafz"><FiGithub/></a>
+            <a href="https://github.com/lubnaafz" onClick={()=>gaEventTracker('github')}><FiGithub/></a>
           </div>
           <div className="icon">
             <a href="https://www.instagram.com/lubnaafz/"><BsInstagram/></a>
