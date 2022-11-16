@@ -6,10 +6,17 @@ import { FiGithub } from 'react-icons/fi'
 import { BsYoutube } from 'react-icons/bs'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "animate.css/animate.min.css";
-import useAnalyticsEventTracker from '../useAnalyticsEventTracker';
+import ReactGA from "react-ga4";
 
 const Contact = () => {
-  const gaEventTracker = useAnalyticsEventTracker('Contact us');
+  const onClickGithub = () => {
+    ReactGA.event ({
+      action: 'github_action',
+      category: 'github_category',
+      label: 'github_label',
+      value: 'xxxxx'
+    })
+  }
   return (
     <section className='contact__section' id='contact'>
       <div className="contact__container">
@@ -39,7 +46,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/lubnafairuzzafira/"><BsLinkedin/></a>
           </div>
           <div className="icon">
-            <a href="https://github.com/lubnaafz" onClick={()=>gaEventTracker('github')}><FiGithub/></a>
+            <a href="https://github.com/lubnaafz" onClick={onClickGithub}><FiGithub/></a>
           </div>
           <div className="icon">
             <a href="https://www.instagram.com/lubnaafz/"><BsInstagram/></a>
